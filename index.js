@@ -7,7 +7,7 @@ export function slugify(heading) {
     .toLowerCase()
     .trim()
     .replace(/[^\w\s-]/g, "")
-    .replace(/\s+/g, "-")
+    .replace(/ /g, "-")
 }
 
 export function toc(markdown, { maxDepth = 3 } = {}) {
